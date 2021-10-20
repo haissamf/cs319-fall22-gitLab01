@@ -8,6 +8,7 @@ class MaterialManager:
         # other configurations
 
       def changeMaterial(self, material) -> bool:
+
         returnText = ""
 
         match material:
@@ -23,10 +24,12 @@ class MaterialManager:
                 self.carManager.setMaterial(materialType.AlloyX)
                 returnText = "Material is changed to AlloyX."
 
+
             case _:
                 returnText = "Material selection is invalid."
 
         return self._announceMaterial(returnText)
+
 
 
 def _announceMaterial(self, text: str) -> bool:
